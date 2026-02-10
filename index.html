@@ -417,9 +417,9 @@
 
                     <div v-if="index === 0" class="relative z-10 h-full flex flex-col">
                         <div class="flex justify-between items-center opacity-60 mb-8">
-                            <span v-if="content.date" class="text-xs tracking-widest uppercase border border-current px-3 py-1 rounded-full whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px]">{{ content.date }}</span>
-                            <span v-else></span>
-                            <span class="text-xs font-bold">{{ content.author }}</span>
+                            <span v-if="content.date" class="text-xs tracking-wider uppercase border border-current px-3 py-1 rounded-full whitespace-nowrap">{{ content.date }}</span>
+                            <span v-else class="w-0"></span>
+                            <span class="text-xs font-bold whitespace-nowrap">{{ content.author }}</span>
                         </div>
 
                         <div class="flex-1 flex flex-col justify-center p-6">
